@@ -1,14 +1,14 @@
 # Credit Card Validator
 
-![Deploy](https://github.com/USERNAME/HW_Netology_JavaScript_Testing/actions/workflows/deploy.yml/badge.svg?branch=main)
-[GitHub Pages](https://USERNAME.github.io/HW_Netology_JavaScript_Testing/)
+![Deploy](https://github.com/fO-r-Ze/HW_Netology_JavaScript_Testing/actions/workflows/deploy.yml/badge.svg?branch=main)
+[GitHub Pages](https://fO-r-Ze.github.io/HW_Netology_JavaScript_Testing/)
 
 Виджет проверки номера банковской карты (алгоритм Луна) с определением платёжной системы.
 
 ## Что реализовано
 
 - Luhn-валидация номера
-- Определение платёжной системы: Visa, Mastercard, American Express, Мир, Discover, JCB, Diners Club
+- Определение платёжной системы: Visa, Mastercard, American Express, Мир, Union Pay, Discover, JCB, Diners Club
 - Автоопределение системы по мере ввода (обновление логотипа)
 - Unit-тесты валидатора и определения системы (`jest`)
 - JSDOM-тесты взаимодействия с виджетом через `jest.each`
