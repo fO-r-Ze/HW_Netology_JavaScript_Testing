@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+.container {
+  width: 420px;
+}
+
+.card-form-widget {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.control {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 70px 10px 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #4a90e2;
+}
+
+.input.valid {
+  border-color: #2ecc71;
+}
+
+.input.invalid {
+  border-color: #e74c3c;
+}
+
+.card-logo {
+  position: absolute;
+  right: 12px;
+  width: 44px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+.card-logo--visa       { background-image: url('../img/visa.svg'); }
+.card-logo--mastercard { background-image: url('../img/mastercard.svg'); }
+.card-logo--amex       { background-image: url('../img/amex.svg'); }
+.card-logo--mir        { background-image: url('../img/mir.svg'); }
+.card-logo--unionpay  { background-image: url('../img/unionpay.svg'); }
+.card-logo--discover   { background-image: url('../img/discover.svg'); }
+.card-logo--jcb        { background-image: url('../img/jcb.svg'); }
+.card-logo--diners     { background-image: url('../img/diners.svg'); }
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #4a90e2;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit:hover {
+  background: #357abd;
+}
+
+.result {
+  margin-top: 12px;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.result:empty {
+  display: none;
+}
+
+.result--valid {
+  background: #d5f4e6;
+  color: #1e7e34;
+}
+
+.result--invalid {
+  background: #f8d7da;
+  color: #721c24;
+}
